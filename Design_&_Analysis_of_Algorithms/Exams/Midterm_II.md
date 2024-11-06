@@ -1,6 +1,6 @@
-# CSCE 500 - Midterm II
+# CSCE 500 - Midterm Exam II (Fall 2022)
 
-1. For a given Balanced (B)-tree of height $h$ and minmum node degree of $t\le2$, what is the maximum number of keys held in such a tree?
+1. **For a given Balanced (B)-tree of height $h$ and minmum node degree of $t\le2$, what is the maximum number of keys held in such a tree?**
 
     $$
     n \le (2t-1) \Sigma_{i = 0}^h (2t)^i            \\
@@ -8,48 +8,47 @@
     n \le (2t)^h - 1
     $$
  
-2. Given the Red-Black (RB) -tree below, show the resulting tree in sequence after:
-    * Inserting 5
-    * Deleting 2
-    * Deleting 8
+2. **Given the Red-Black (RB) -tree below...**
 
     <img src="../images/CSCE500-MidtermII-2.png">
 
-    A. Inserting 5
+    ...show the resulting tree in sequence after:
 
-    <img src="../images/CSCE500-MidtermII-2a.png">
+    * **A. Inserting 5**
 
-    B. Deleting 2
+        <img src="../images/CSCE500-MidtermII-2a.png">
 
-    <img src="../images/CSCE500-MidtermII-2b.png">
+    * **B. Deleting 2**
 
-    C. Deleting 8
+        <img src="../images/CSCE500-MidtermII-2b.png">
 
-    <img src="../images/CSCE500-MidtermII-2c.png">
+    * **C. Deleting 8**
 
-3. Given the initial B-Tree with a minimum node degree of $t=3$, show the results of:
-    * Deleting $T$
-    * Deleting $C$
-    * Inserting $J_2$ | $J \lt J_2 \lt K$
-    * Deleting $Y$
+        <img src="../images/CSCE500-MidtermII-2c.png">
+
+3. **Given the initial B-Tree with a minimum node degree of $t=3$...**
 
     <img src="../images/CSCE500-MidtermII-3.png">
 
-    A. Deleting $T$
+    ...show the results of:
 
-    <img src="../images/CSCE500-MidtermII-3a.png">
+    * **A. Deleting $T$**
 
-    B. Deleting $C$
+        <img src="../images/CSCE500-MidtermII-3a.png">
 
-    <img src="../images/CSCE500-MidtermII-3b.png">
+    * **B. Deleting $C$**
 
-    C. Inserting $J_2$ | $J \lt J_2 \lt K$
+        <img src="../images/CSCE500-MidtermII-3b.png">
 
-    <img src="../images/CSCE500-MidtermII-3c.png">
+    * **C. Inserting $J_2$ | $J \lt J_2 \lt K$**
 
-    D. Deleting $Y$
+        <img src="../images/CSCE500-MidtermII-3c.png">
 
- 4. Procedure `EXTENDED-BOTTOM-UP-CUT-ROD(P, N)` below exhibits low time complexity by utilizing two auziliary arrays, $r[0 \dots n]$ and $s[0 \dots n]$ to keep solutions for sub-problems obtained thus far, following the bottom-up approach.
+    * **D. Deleting $Y$**
+
+        <img src="../images/CSCE500-MidtermII-3d.png">
+
+ 4. **Procedure `EXTENDED-BOTTOM-UP-CUT-ROD(P, N)` below exhibits low time complexity by utilizing two auziliary arrays, $r[0 \dots n]$ and $s[0 \dots n]$ to keep solutions for sub-problems obtained thus far, following the bottom-up approach.**
 
     ```
     Extended-Bottom-Up-Cut-Rod(p, n)
@@ -65,13 +64,21 @@
         return r and s
     ```
 
-    * Fill in the missing statement
-    * Give its time complexity
-    * If `Extended-Bottom-Up-Cut-Rod(p, 8)` returns...
-    
-        | i     | 0 | 1 | 2 | 3 | 4     | 5     | 6     | 7     | 8     |
-        |-------|---|---|---|---|-------|-------|-------|-------|-------|
-        | r[i]  | 0 | 1 | 5 | 8 | 10    | 13    | 17    | 18    | 22    |
-        | s[i]  | 0 | 1 | 2 | 3 | 2     | 2     | 6     | 1     | 2     |
+    * **A. Fill in the missing statement.**
 
-        show your resulting cut of the rod with 8 units in length for the maximum revenue.
+        `s[j] = i` (Record the optimal cut-length found thus far)
+
+    * **B. Give its time complexity.**
+
+        $\Theta(n^2)$
+
+    * **C. If `Extended-Bottom-Up-Cut-Rod(p, 8)` returns...**
+    
+        | $i$       | 0 | 1 | 2 | 3 | 4     | 5     | 6     | 7     | 8     |
+        |:---------:|---|---|---|---|-------|-------|-------|-------|-------|
+        | $r[i]$    | 0 | 1 | 5 | 8 | 10    | 13    | 17    | 18    | 22    |
+        | $s[i]$    | 0 | 1 | 2 | 3 | 2     | 2     | 6     | 1     | 2     |
+
+        **...show your resulting cut of the rod with 8 units in length for the maximum revenue.**
+
+        <img src="../images/CSCE500-MidtermII-4c.png">
