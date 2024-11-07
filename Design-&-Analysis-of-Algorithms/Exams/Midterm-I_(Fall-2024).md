@@ -30,12 +30,34 @@
 
 3. **The utilization efficiency of a hash table depends heavily on its hashing function(s) employed. Describe with a diagram to illustrate how a multiplication method of hashing functions works on a machine with a word size of $w$ bits for a hash table with $2^p$ entries | $p \lt w$.**
 
+    <img src="../images/CSCE500-MidtermI-Fall2024-3.png">
+
 ---
 
 4. **For an open-address hash table with load factor $\alpha = \frac{n}{m} \lt 1$, prove that:**
 
     * **A. The expected number of probes in an unsuccessful search under uniform hashing is at most $\frac{1}{1 - \alpha}$.**
+
+        This question applies to Theorem 1 of Open-Address Hashing Analysis:
+
+        Inserting an element into an open-address hash table with load factor $\alpha$ takes at most $\frac{1}{1 - \alpha}$ probes on an average under uniform hashing, because it has $(1 - \alpha)$ for 1 probe, plus probability $\alpha(1 - \alpha)$ to take 2 probes, plus probability $\alpha^2(1 - \alpha)$ to take 3 probes, etc., yielding $1 + \alpha + \alpha^2 + \alpha^3 + \dots = \frac{1}{1 - \alpha}$.
+
     * **B. The expected number of probes in a successful probe under uniform hashing is at most $(\frac{1}{\alpha}) \cdot \lg(1 - \alpha)^{-1}$. (Proof sketch suffices by explaining the probe count needed to locate existing keys)**
+
+        This question applies to Theorem 2 of Open-Address Hashing Analysis:
+
+        **NOTE**: Successful search for a key equals the sequence of inserting the key.
+
+        $2^{nd}$ key insertion takes $\le \frac{1}{1 - (\frac{1}{m})}$ probes, on an average, when $\alpha$ is $\frac{1}{m}$.
+
+
+        $3^{rd}$ key insertion takes $\le \frac{1}{1 - (\frac{2}{m})}$ probes, on an average, when $\alpha$ is $\frac{2}{m}$.
+
+        ...
+
+        $(i + 1)^{th}$ key takes $\le \frac{1}{1 - (\frac{i}{m})}$ probes.
+
+        Average number of probes equals results over all $n$ keys inserted. This is because insertion and probes follow the same hash function, and we have: $\frac{1}{n} \Sigma_{i = 0}^{n - 1} \frac{1}{1 - \frac{i}{m}}$
 
 ---
 
@@ -56,6 +78,26 @@
 ---
 
 6. **Show that a Red-Black (RB)-tree with $n$ internal nodes has the height of $h \le 2 \cdot \lg(n + 1)$.**
+
+    <img src="../images/CSCE500-MidtermI-Fall2024-6.png">
+
+    Node $x$ defines a subtree with at least $2^{bh(x)} - 1$ internal nodes, proved by induction:
+
+    $$
+    |x| = |y| + |z| + 1                                 \\
+    \ge (2^{bh(x) - 1} - 1) + (2^{bh(x) - 1} - 1) + 1   \\
+    = 2 \cdot 2^{bh(x) - 1} - 1                         \\
+    = 2^{bh(x)} - 1                                     \\
+    $$
+
+    Given $bh(x) \ge \frac{h(x)}{2}$, we have:
+
+    $$
+    n \ge 2^{bh(x)} - 1 \ge 2^{\frac{h(x)}{2}} - 1  \\
+    n + 1 \ge 2^{\frac{h(x)}{2}}
+    $$
+
+    To get $\lg(n + 1) \ge \frac{h(x)}{2}$
 
 ---
 
