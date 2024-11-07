@@ -1,1 +1,0 @@
-# CSCE 500 - Midterm Exam I (Fall 2024)
