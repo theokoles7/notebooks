@@ -149,9 +149,19 @@
         return D^n
     ```
 
-    A. **Derive all distance matrices $D^{(k)}$, for $0 \le k \le 4$, following $FW$ so that the $d_{i, j}^{(n)}$ element of the final matrix $D^{(n)}$ denotes $\delta(i, j)$ for every vertex pair $<i, j>$.**
+    <img src="../images/CSCE500-Final-Fall2022-6.png">
 
-    B. **Show the missing statement in the pseudocode.**
+    * A. **Derive all distance matrices $D^{(k)}$, for $0 \le k \le 4$, following $FW$ so that the $d_{i, j}^{(n)}$ element of the final matrix $D^{(n)}$ denotes $\delta(i, j)$ for every vertex pair $<i, j>$.**
+
+        <img src="../images/CSCE500-Final-Fall2022-6a.png">
+
+    * B. **Show the missing statement in the pseudocode.**
+
+        `d_{i,j}^k = min(d_{i,j}^{k - 1}, d_{i,k}^{k-1} + d_{k,j}^{k-1} + )`
+
+        OR
+
+        $D_{i,j}^k = min(D_{i,j}^{k-1}, D_{i,k}^{k-1} + D_{k,j}^{k-1})$
 
 ---
 
