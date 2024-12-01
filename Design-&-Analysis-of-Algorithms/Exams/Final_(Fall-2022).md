@@ -3,9 +3,16 @@
 
 1. **Solve $T(n)$ for the following two recurrences.**
 
-    A. **$T(n) = T(\frac{n}{8}) + T(\frac{n}{4}) + T(\frac{n}{2}) + cn$**
+    * A. **$T(n) = T(\frac{n}{8}) + T(\frac{n}{4}) + T(\frac{n}{2}) + cn$**
 
-    B. **$T(n) = 8\cdot T(\frac{n}{3}) + \Theta(n^2)$**
+    * B. **$T(n) = 8\cdot T(\frac{n}{3}) + \Theta(n^2)$**
+
+        Use master method case #3:
+
+        Let $\alpha = 8$ and $\beta = 3$                    \
+        $\implies n^{log_3(8)} \approx n^{1.893}$       \
+        $\implies$ Polynomially smaller than $f(n^2)$   \
+        $\therefore T(n) = 8\cdot T(\frac{n}{3}) + \Theta(n^2) \in \Theta(n^2)$
 
 ---
 
@@ -15,11 +22,17 @@
 
     **...show the resulting tree in sequence after:**
 
-    A. **Inserting 17**
+    * A. **Inserting 17**
 
-    B. **Deleting 14**
+        <img src="../images/CSCE500-Final-Fall2022-2a.png">
 
-    C. **Inserting 12**
+    * B. **Deleting 14**
+
+        <img src="../images/CSCE500-Final-Fall2022-2b.png">
+
+    * C. **Inserting 12**
+
+        <img src="../images/CSCE500-Final-Fall2022-2c.png">
 
 ---
 
@@ -29,13 +42,26 @@
 
     ...show the results of:
 
-    A. **Inserting $L_1$ | $L \lt L_1 \lt M$**
+    |       | Keys  | Children  |
+    |:-----:|:-----:|:---------:|
+    | Min   | 1     | 2         |
+    | Max   | 3     | 4         |
 
-    B. **Deleting $T$**
+    * A. **Inserting $L_1$ | $L \lt L_1 \lt M$**
 
-    C. **Inserting $F_2$ | $F \lt F_2 \lt G$**
+        <img src="../images/CSCE500-Final-Fall2022-3a.png">
 
-    D. **Deleting $R$**
+    * B. **Deleting $T$**
+
+        <img src="../images/CSCE500-Final-Fall2022-3b.png">
+
+    * C. **Inserting $F_2$ | $F \lt F_2 \lt G$**
+
+        <img src="../images/CSCE500-Final-Fall2022-3c.png">
+
+    * D. **Deleting $R$**
+
+        <img src="../images/CSCE500-Final-Fall2022-3d.png">
 
 
 ---
