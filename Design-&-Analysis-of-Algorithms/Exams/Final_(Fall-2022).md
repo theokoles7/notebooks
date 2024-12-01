@@ -85,9 +85,36 @@
         return m and s
     ```
 
-    A. **Construct both tables, with their entry values shown.**
+    * A. **Construct both tables, with their entry values shown.**
 
-    B. **Give the optimal parenthesized result, following $s$.**
+    * B. **Give the optimal parenthesized result, following $s$.**
+
+    $$
+    m[1,2] = 30 \cdot 12 \cdot 10 = 3600        \\
+    m[2,3] = 12 \cdot 10 \cdot 12 = 1200        \\
+    m[3,4] = 10 \cdot 12 \cdot 5  = 600         \\
+
+    m[1,3] = min
+        \begin{cases}
+            m[1,1] + m[2,3] + (30 \cdot 12 \cdot 12) = 0 + 1200 + 4320 = \textbf{5520}  \\
+            m[1,2] + m[3,3] + (30 \cdot 10 \cdot 12) = 3600 + 0 + 3600 = 7200           \\
+        \end{cases}\\
+
+    m[2,4] = min
+        \begin{cases}
+            m[2,2] + m[3,4] + (12 \cdot 10 \cdot 5) = 0 + 600 + 600 = \textbf{1200} \\
+            m[2,3] + m[4,4] + (12 \cdot 12 \cdot 5) = 1200 + 0 + 720 = 1920         \\
+        \end{cases}\\
+
+    m[1,4] = min
+        \begin{cases}
+            m[1,1] + m[2,4] + (30 \cdot 12 \cdot 5) = 0 + 1200 + 1800 = \textbf{3000}   \\
+            m[1,2] + m[3,4] + (30 \cdot 10 \cdot 5) = 3600 + 600 + 1500 = 5700          \\
+            m[1,3] + m[4,4] + (30 \cdot 12 \cdot 5) = 5520 + 0 + 1800 = 7320            \\
+        \end{cases}\\
+    $$
+
+    <img src="../images/CSCE500-Final-Fall2022-4.png">
 
 ---
 
@@ -102,6 +129,10 @@
     C. **Sort all nodes in a topological order.**
 
     D. **Derive the shortest paths from $v_1$ to all other nodes in the graph via relaxation.**
+
+    <img src="../images/CSCE500-Final-Fall2022-5abd.png">
+
+    <img src="../images/CSCE500-Final-Fall2022-5c.png">
 
 ---
 
