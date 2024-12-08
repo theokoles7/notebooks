@@ -46,6 +46,10 @@
     * [35: Approximation Algorithms](./VII_Selected-Topics/35_Approximation-Algorithms/toc.md)
     * [26: Parallel Algorithms](./VII_Selected-Topics/26_Parallel-Algorithms/toc.md)
 
+## Assignment Guides:
+* [Assignment I - Fall 2024](./assignments/Assignment-I-Fall2024.md)
+* [Assignment II - Fall 2024](./assignments/Assignment-II-Fall2024.md)
+
 ## Exam Guides:
 * Midterm I:
     * [Fall 2022](./Exams/Midterm-I_(Fall-2022).md)
@@ -55,3 +59,8 @@
     * [Fall 2024](./Exams/Midterm-II_(Fall-2024).md)
 * Final:
     * [Fall 2022](./Exams/Final_(Fall-2022).md)
+* Comprehensive Exams:
+    * [Fall 2020](./exams/Algorithms-Comprehensive_(Fall-2020).md)
+    * [Fall 2021](./exams/Algorithms-Comprehensive_(Fall-2021).md)
+    * [Spring 2022](./exams/Algorithms-Comprehensive_(Spring-2022).md)
+    * [Spring 2023](./exams/Algorithms-Comprehensive_(Spring-2023).md)
