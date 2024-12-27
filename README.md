@@ -5,3 +5,7 @@
     * ### [Data Mining](./Data-Mining_Concepts-and-Techniques/toc.md)
     * ### [Image Processing](./Image-Processing/toc.md)
     * ### [Pattern Recognition](./Pattern-Recognition/toc.md)
+
+* ## Books
+    * ### [*Deep Reinforcement Learning* (Plaat)](./Deep-Reinforcement-Learning/toc.md)
+    * ### [*Reinforcement Learning* (Sutton & Barto)](./Reinforcement-Learning/toc.md)
