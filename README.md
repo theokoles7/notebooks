@@ -7,5 +7,6 @@
     * ### [Pattern Recognition](./Pattern-Recognition/toc.md)
 
 * ## Books
+    * ### [*Algorithmic Trading* (Conlan)](./Algorithmic-Trading/toc.md)
     * ### [*Deep Reinforcement Learning* (Plaat)](./Deep-Reinforcement-Learning/toc.md)
     * ### [*Reinforcement Learning* (Sutton & Barto)](./Reinforcement-Learning/toc.md)
