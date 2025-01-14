@@ -92,7 +92,12 @@
 
 ---
 
-5. **Given a set of 4 keys, with the following probabilities, determine the cost and the structure of an optimal binary search tree (OBST), following the tabular, bottom-up method realized in the procedure `OPTIMAL-BST` below to construct and fill $e[1, 5, 0, 4]$, $w[1, 5, 0, 4]$, and $roof[1, 4, 1, 4]$...**
+5. **Given a set of 4 keys, with the following probabilities, determine the cost and the structure of an optimal binary search tree (OBST), following the tabular, bottom-up method realized in the procedure `OPTIMAL-BST` below to construct and fill $e[1 \dots 5, 0 \dots 4]$, $w[1 \dots 5, 0 \dots 4]$, and $root[1 \dots 4, 1 \dots 4]$...**
+
+    | $i$   | 0     | 1     | 2     | 3     | 4     |
+    |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+    | $p_i$ |       | 0.12  | 0.08  | 0.15  | 0.18  |
+    | $q_i$ | 0.08  | 0.06  | 0.09  | 0.10  | 0.14  |
 
     ```
     OPTIMAL-BST(p, q, n)
