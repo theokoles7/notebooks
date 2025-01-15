@@ -4,9 +4,9 @@
 
 * ### Instructor:
 
-    * Name: 
-    * Office: 
-    * Email: 
+    * Name: Dr. Henry Chu
+    * Office: OLVR 304
+    * Email: henry.chu@louisiana.edu
 
 * ### Textbook:
 
@@ -17,4 +17,23 @@
 
 * ### Grade Distribution: 
 
+* ### Recorded Lecture Days:
+    * 22 January
+    * 3 February
+    * 12 February
+    * 17 February
+    * 31 March
+    * 2 April
+
 ## Course Contents (subset of textbook): 
+* Optimal Decision Rule for Classification Problem
+* Linear Classifier: Perceptron. LMS
+* Learning Problem. Cross Validation; Bias & Variance
+* Python
+* Neural Networks
+* Support Vector Machines (SVM)
+* K-Nearest Neighbors
+* Decision Tree. Random Forest. Xgboost
+* PCA, Projections; K-Means
+* Hierarchical. Dendogram.
+* DB Scan
