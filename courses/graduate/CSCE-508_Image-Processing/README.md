@@ -25,11 +25,20 @@
         * Final Presentation: 20%
     * Final Exam: 20%
 
-## Course Contents/Notes:
+## Assignments:
+* ### Assignment 01
+    * [Written Portion](./_assignments_/01-written-portion.pdf)
+    * [Lab](./_assignments_/01-lab.ipynb)
 
-* ### Introduction
-* ### Image Filtering
-* ### Image Registration & Segmentation
-* ### Machine Learning
-* ### Models
-* ### Applications
+## Lecture Contents/Notes:
+
+* ### Introduction | [Slides](./_lectures_/01_Introduction.pdf)
+* ### Prerequisites | [Slides](./_lectures_/02_Prerequisites.pdf)
+* ### Digital Image Fundamentals | [Slides](./_lectures_/03_Digital-Image-Fundamentals.pdf)
+* ### Intensity Transformations | [Slides](./_lectures_/04_Intensity-Transformation.pdf)
+* ### Filtering I | [Slides](./_lectures_/05_Filtering-I.pdf)
+* ### Filtering II | [Slides](./_lectures_/06_Filtering-II.pdf)
+* ### Transformations I | [Slides](./_lectures_/07_Transformation-I.pdf)
+* ### Transformations II | [Slides](./_lectures_/08_Transformation-II.pdf)
+* ### Image Segmentation | [Slides](./_lectures_/09_Image-Segmentation.pdf)
+* ### Machine Learning | [Slides](./_lectures_/10_Machine-Learning.pdf)
