@@ -4,7 +4,7 @@ This repository holds notes & materials compiled while taking college courses (u
 
 ## [Courses](./courses/README.md)
 
-Coureses listed here were required for/in pursuit of a B.S., M.S., and Ph.D. in Computer Science at the University of Louisiana - Lafayette.
+Courses listed here were required for/in pursuit of a B.S., M.S., and Ph.D. in Computer Science at the University of Louisiana - Lafayette.
 
 * ### [Undergraduate](./courses/undergraduate/README.md)
 
