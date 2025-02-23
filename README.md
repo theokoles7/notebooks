@@ -59,4 +59,6 @@ Courses listed here were required for/in pursuit of a B.S., M.S., and Ph.D. in C
     * #### [CSCE-588: Neural Networks](./courses/graduate/CSCE-588_Neural-Networks/README.md)
     * #### [CSCE-598: Deep Learning](./courses/graduate/CSCE-598_Deep-Learning/README.md)
 
-## Books
+## [Books](./books/README.md)
+
+* ### [Digital Image Processing (4th Global Edition)](./books/Digital-Image-Processing/README.md)
