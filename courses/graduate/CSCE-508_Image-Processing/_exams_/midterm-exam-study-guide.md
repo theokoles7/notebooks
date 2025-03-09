@@ -251,18 +251,30 @@
 
     Backwards mapping
 
+2. What are the three steps of image registration?
+
+3. What is blob detection?
+
+4. How is the 2nd derivative of the Gaussian distribution related to the normalized Laplacian?
+
+5. How is the SIFT descriptor constructed?
+
+6. What are the properties of the SIFT descriptor?
+
+7. How does one find the matches between paired points?
+
+8. How does one deal with bad matches in the RANSAC algorithm?
+
 ## Lecture 9: [Segmentation](../_lectures_/09_Image-Segmentation.pdf)
 
-1. What are the three steps of image registration?
+1. What are the 3 types of segmentation tasks?
 
-2. What is blob detection?
+2. In semantic segmentation, what are:
 
-3. How is the 2nd derivative of the Gaussian distribution related to the normalized Laplacian?
+    * Thresholding?
 
-4. How is the SIFT descriptor constructed?
+    * Ostu thresholding?
 
-5. What are the properties of the SIFT descriptor?
+    * Adaptive thresholding?
 
-6. How does one find the matches between paired points?
-
-7. How does one deal with bad matches in the RANSAC algorithm?
+3. 
