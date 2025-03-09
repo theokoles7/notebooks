@@ -30,6 +30,10 @@
     * [Written Portion](./_assignments_/01-written-portion.pdf)
     * [Lab](./_assignments_/01-lab.ipynb)
 
+## Exams:
+* ### Midterm:
+    * [Study Guide](./_exams_/midterm-exam-study-guide.md)
+
 ## Lecture Contents/Notes:
 
 * ### Introduction | [Slides](./_lectures_/01_Introduction.pdf)
