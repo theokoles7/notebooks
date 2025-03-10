@@ -1,5 +1,5 @@
 # Midterm Exam Study Guide
-[CSCE-508: Image Processing](../README.md)
+[< CSCE-508: Image Processing](../README.md)
 
 **NOTE**: Format of exam consists of multiple-choice, short-answer, true/false, and two simple computation problems.
 
@@ -40,7 +40,7 @@
 
     * Rods: Give a general overall picture of view, are insensitive to color, and are sensitive to low levels of illumination
 
-2 Digital image acquisition:
+2. Digital image acquisition:
 
     * Illumination source:
 
