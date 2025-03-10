@@ -46,3 +46,5 @@
 * ### Transformations II | [Slides](./_lectures_/08_Transformation-II.pdf)
 * ### Image Segmentation | [Slides](./_lectures_/09_Image-Segmentation.pdf)
 * ### Machine Learning | [Slides](./_lectures_/10_Machine-Learning.pdf)
+* ### Linear Regression | [Slides](./_lectures_/11_Linear-Regression.pdf)
+* ### Linear Classification | [Slides](./_lectures_/12_Linear-Classification.pdf)
