@@ -61,4 +61,8 @@ Courses listed here were required for/in pursuit of a B.S., M.S., and Ph.D. in C
 
 ## [Books](./books/README.md)
 
-* ### [Digital Image Processing (4th Global Edition)](./books/Digital-Image-Processing/README.md)
+* ### [Computer Vision: Algorithms & Applications (Szeliski, 2010)](./books/Computer-Vision_Algorithms-and-Applications/README.md)
+* ### [Deep Learning (Goodfellow, 2016)](./books/Deep-Learning/README.md)
+* ### [Digital Image Processing (Gonzalez, 2018)](./books/Digital-Image-Processing/README.md)
+* ### [[The] Little Book of Deep Learning (Fleuret, 2024)](./books/The-Little-Book-of-Deep-Learning/README.md)
+* ### [Pattern Recognition & Machine Learning (Bishop, 2006)](./books/Pattern-Recognition-and-Machine-Learning/README.md)

@@ -9,9 +9,19 @@
     * Office: OLVR 357
     * Email: hao.zheng@louisiana.edu
 
-* ### Textbook(s) & Resources:
+* ### Textbook(s):
 
     * [Digital Image Processing (4th Edition)](../../../books/Digital-Image-Processing/README.md)
+    * [Deep Learning](../../../books/Deep-Learning/README.md)
+    * [The Little Book of Deep Learning](../../../books/The-Little-Book-of-Deep-Learning/README.md)
+    * [Pattern Recognition and Machine Learning](../../../books/Pattern-Recognition-and-Machine-Learning/README.md)
+    * [Computer Vision: Algorithms & Applications](../../../books/Computer-Vision_Algorithms-and-Applications/README.md)
+
+* ### Resources (YouTube playlists):
+
+    * [Linear Algebra](https://www.youtube.com/playlist?list=PL0-GT3co4r2y2YErbmuJw2L5tW4Ew2O5B)
+    * [Multivariate Calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
+    * [Deep Learning for Computer Vision](https://www.youtube.com/playlist?list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r)
 
 * ### Grade Distribution:
     * Assignments (4) : 30%
