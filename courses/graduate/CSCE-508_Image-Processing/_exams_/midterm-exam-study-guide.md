@@ -239,11 +239,127 @@
 
 1. What is the formalization of an image translation?
 
+    $\begin{align}
+        \begin{bmatrix}
+            x_1 \\
+            y_1
+        \end{bmatrix} \rightarrow 
+        \begin{bmatrix}
+            x_2 \\
+            y_2
+        \end{bmatrix} =
+        \begin{bmatrix}
+            x_1 + a \\
+            y_1 + b
+        \end{bmatrix} =
+        \begin{bmatrix}
+            1~0~a \\
+            0~1~b
+        \end{bmatrix}
+        \begin{bmatrix}
+            x_1 \\
+            y_1 \\
+            1
+        \end{bmatrix}
+    \end{align}$
+
 2. What is the formalization of an image scaling?
+
+    $\begin{align}
+        \begin{bmatrix}
+            x_1 \\
+            y_1
+        \end{bmatrix} \rightarrow 
+        \begin{bmatrix}
+            x_2 \\
+            y_2
+        \end{bmatrix} =
+        \begin{bmatrix}
+            ax_1 \\
+            by_1
+        \end{bmatrix} =
+        \begin{bmatrix}
+            a~0~0 \\
+            0~b~0
+        \end{bmatrix}
+        \begin{bmatrix}
+            x_1 \\
+            y_1 \\
+            1
+        \end{bmatrix}
+    \end{align}$
 
 3. What is the formalization of an image rotation?
 
+    $\begin{align}
+        \begin{bmatrix}
+            x_1 \\
+            y_1
+        \end{bmatrix} \rightarrow 
+        \begin{bmatrix}
+            x_2 \\
+            y_2
+        \end{bmatrix} =
+        \begin{bmatrix}
+            cos(\alpha)~sin(\alpha) \\
+            -sin(\alpha)~cos(\alpha)
+        \end{bmatrix}
+        \begin{bmatrix}
+            x_1 \\
+            y_1
+        \end{bmatrix} =
+        \begin{bmatrix}
+            cos(\alpha)~sin(\alpha)~0 \\
+            -sin(\alpha)~cos(\alpha)~0
+        \end{bmatrix}
+        \begin{bmatrix}
+            x_1 \\
+            y_1 \\
+            1
+        \end{bmatrix}
+    \end{align}$
+
 4. What is the formalization of an affine transformation?
+
+    $\begin{align}
+        \begin{bmatrix}
+            x_1 \\
+            y_1
+        \end{bmatrix} \rightarrow 
+        \begin{bmatrix}
+            x_2 \\
+            y_2
+        \end{bmatrix} =
+        \begin{bmatrix}
+            S_x~0 \\
+            0~S_y
+        \end{bmatrix}
+        \begin{bmatrix}
+            cos(\alpha)~sin(\alpha) \\
+            -sin(\alpha)~cos(\alpha)
+        \end{bmatrix}
+        \begin{bmatrix}
+            x_1 \\
+            y_1
+        \end{bmatrix} +
+        \begin{bmatrix}
+            t_x \\
+            t_y
+        \end{bmatrix} =
+        \begin{bmatrix}
+            ax_1 + by_1 + c \\
+            dx_1 + ey_1 + f
+        \end{bmatrix} =
+        \begin{bmatrix}
+            a~b~c \\
+            d~e~f
+        \end{bmatrix}
+        \begin{bmatrix}
+            x_1 \\
+            y_1 \\
+            1
+        \end{bmatrix}
+    \end{align}$
 
 ## Lecture 8: [Transformation II](../_lectures_/08_Transformation-II.pdf)
 
@@ -253,28 +369,96 @@
 
 2. What are the three steps of image registration?
 
+    * Intensity-based registration (Direct): Aligns images by maximizing a similarity metric, such as mutual information or cross-correlation, between pixel intensities.
+
+    * Feature-based registration: Identifies distinct features (e.g., key points, edges, corners) in images and finds correspondences between them.
+
+    * Model-based (Transform-based): Relies on predefined transformation models (e.g., affine, projective, rigid, or non-rigid transformations) to align images.
+
 3. What is blob detection?
+
+    Blobs are homogenous regions that stand out from the background of an image. Detection highlights keypoints that are scale- and rotation-invariant.
 
 4. How is the 2nd derivative of the Gaussian distribution related to the normalized Laplacian?
 
+    The Laplacian of Gaussian (LoG) is obtained by taking the second derivative of the Gaussian function. The normalized Laplacian of Gaussian scales the LoG by σ2σ2 to ensure scale invariance. This is widely used in blob detection (e.g., in the scale-invariant Laplacian blob detector) and edge detection techniques.
+
 5. How is the SIFT descriptor constructed?
+
+    * Scale-space construction
+    * Keypoint detection
+    * Keypoint refinement
+    * Orientation assignment
+    * Descriptor construction
+    * Descriptor normalization
 
 6. What are the properties of the SIFT descriptor?
 
+    * Scale-invariant: due to multi-scale detection
+    * Rotation-invariant: due to dominant orientation assignment
+    * Illumination-invariant: due to gradient-based representation and normalization
+    * Highly distinctive: 128-dimensional vector captures local image patterns
+
 7. How does one find the matches between paired points?
 
+    * Brute-force: Computes the Euclidean distance or Hamming distance between all feature descriptors in two images. The nearest neighbor with the smallest distance is considered a match.
+
+    * k-Nearest Neighbors (k-NN) Matching: Finds the k nearest neighbors for each descriptor.
+
+    * FLANN (Fast Library for Approximate Nearest Neighbor): Uses optimized search structures like kd-trees or hierarchical k-means trees for faster matching
+
 8. How does one deal with bad matches in the RANSAC algorithm?
+
+    * Select a random subset: Randomly pick a small subset of matched points (e.g., 4 or more for homography).
+    * Estimate a Transformation Model: Compute a transformation (e.g., homography, affine transformation, or fundamental matrix) using the selected points.
+    * Find Inliers: Apply the estimated model to all matched points and count how many fit within a tolerance threshold (e.g., reprojection error < some epsilon)
+    * Repeat the Process: Iterate multiple times (e.g., 1000 iterations) and choose the model with the most inliers.
+    * Recompute the Model: Use the inliers to compute a refined model.
 
 ## Lecture 9: [Segmentation](../_lectures_/09_Image-Segmentation.pdf)
 
 1. What are the 3 types of segmentation tasks?
 
+    * Semantic: Classifies each pixel into a category (e.g., road, car, person, sky).
+
+    * Instance: Like semantic segmentation, but distinguishes between different instances of the same object class.
+
+    * Panoptic: A combination of semantic and instance segmentation. Assigns both a class label and an instance ID to each pixel.
+
 2. In semantic segmentation, what are:
 
     * Thresholding?
 
+        A fixed threshold TT is chosen, and pixels are classified as foreground or background.
+
     * Ostu thresholding?
+
+        Finds an optimal threshold automatically by minimizing intra-class variance (i.e., within-class variance of foreground and background).
 
     * Adaptive thresholding?
 
-3. 
+        Uses different thresholds for different parts of an image, useful for varying lighting conditions. Computes the threshold based on the local neighborhood’s mean or Gaussian-weighted mean.
+
+3. In Post-Processing, what are:
+
+    * Common morphological operations?
+
+        * Erosion: Shrinking objects in an image
+
+        * Dilation: Expanding objects in an image
+
+        * Opening: Remove small noise using erosion followed by dilation
+
+        * Closing: Fills small holes using dilation followed by erosion
+
+    * The two basic operations?
+
+        * Erosion: Shrinking objects in an image
+
+        * Dilation: Expanding objects in an image
+
+    * Other opertaions?
+
+        * Thinning/thickening: Thinning successively erodes object edges without breaking connectivity. Thickening is similar to dilation, but selectively adds pixels without merging objects.
+
+        * Hole filling: Fills enclosed holes inside objects.
