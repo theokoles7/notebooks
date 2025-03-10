@@ -1,5 +1,5 @@
 # *Deep Reinforcement Learning*
-[< Back](../README.md)
+[< Books](../README.md)
 
 ## Table of Contents:
 * ### [1. Introduction](./1_Introduction/toc.md)
