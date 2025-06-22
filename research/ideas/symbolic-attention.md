@@ -5,7 +5,7 @@ A novel reinforcement learning approach that combines symbolic reasoning with at
 
 ## Overview
 
-This repository implements Symbolic Attention Mechanisms - a new paradigm where RL agents learn to attend to objects and relationships using symbolic predicates rather than raw features. Instead of learning "attend to pixels at location (x,y)", agents learn logical attention patterns like "attend to objects where color(X, red) AND movable(X)".
+Implements Symbolic Attention Mechanisms - a new paradigm where RL agents learn to attend to objects and relationships using symbolic predicates rather than raw features. Instead of learning "attend to pixels at location (x,y)", agents learn logical attention patterns like "attend to objects where color(X, red) AND movable(X)".
 
 ## Key Features
 
